@@ -17,23 +17,7 @@
       color: #ffffff;
       padding: 20px;
     }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #00bfff;
-    }
-
-    header p {
-      font-size: 1.1em;
-      color: #cccccc;
-    }
-
+    
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -79,13 +63,50 @@
       font-size: 0.9em;
       color: #777;
     }
+
+    .header-logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .header-logo-title img {
+      height: 200px;
+      width: auto;
+    }
+
+    .header-text-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header-text-block h1 {
+      font-size: 2em;
+      color: #00bfff;
+      margin-bottom: 5px;
+    }
+
+    .header-text-block p {
+      font-size: 1.05em;
+      color: #cccccc;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Orion Sector Military Designs</h1>
-    <p>Showcase of Human-designed military assets in the Orion Frontier</p>
+    <div class="header-logo-title">
+      <img src="images/osuc_insignia.png" alt="OSUC Insignia">
+      <div class="header-text-block">
+        <h1>Orion Sector Unified Command</h1>
+        <p>Showcase of Human-designed military assets in the Orion Frontier</p>
+      </div>
+    </div>
   </header>
 
   <section class="gallery">
