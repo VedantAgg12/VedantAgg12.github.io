@@ -17,7 +17,7 @@
       color: #ffffff;
       padding: 20px;
     }
-    
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,6 +95,43 @@
       font-size: 1.05em;
       color: #cccccc;
     }
+
+    .fleet-subheader {
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    .fleet-subheader-flex {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .fleet-subheader-flex img {
+      height: 150px;
+      width: auto;
+    }
+
+    .fleet-subheader-text h2 {
+      font-size: 1.6em;
+      color: #00bfff;
+      margin-bottom: 4px;
+    }
+
+    .fleet-subheader-text p {
+      font-size: 1em;
+      color: #cccccc;
+    }
+
+    .section-divider {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, #00bfff, transparent);
+      margin: 40px auto 60px;
+      width: 80%;
+    }
+
   </style>
 </head>
 <body>
@@ -108,6 +145,18 @@
       </div>
     </div>
   </header>
+
+  <hr class="section-divider">
+
+  <section class="fleet-subheader">
+    <div class="fleet-subheader-flex">
+      <img src="images/aegis_of_orion.png" alt="Aegis of Orion Insignia">
+      <div class="fleet-subheader-text">
+        <h2>Aegis of Orion</h2>
+        <p>Primary fleet tasked with defense, coordination, and order in the Orion Sector.</p>
+      </div>
+    </div>
+  </section>
 
   <section class="gallery">
     <!-- Example Card -->
@@ -306,6 +355,28 @@
 
 
    </section>
+
+   <hr class="section-divider">
+
+   <section class="fleet-subheader">
+      <div class="fleet-subheader-flex">
+        <img src="images/spear_of_orion.png" alt="Spear of Orion Insignia">
+        <div class="fleet-subheader-text">
+          <h2>Spear of Orion</h2>
+          <p>Offensive fleet focused on reclaiming lost systems and rescuing displaced human colonies.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="gallery">
+      <div class="card">
+        <img src="images/vindicator_dread_carrier.jpg" alt="Vindicator-class Dread Carrier">
+        <div class="card-content">
+          <h3>Vindicator-class Dread Carrier</h3>
+          <p>A hybrid dreadnought-carrier platform designed for overwhelming fleet presence. Combines heavy firepower with fighter and dropship deployment capabilities for sustained frontline operations.</p>
+        </div>
+      </div>
+    </div>
 
   <footer>
     <p>&copy; 2025 Orion Sector Defense Authority | Designed by Vedant Aggarwal</p>
