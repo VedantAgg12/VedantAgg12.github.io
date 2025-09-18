@@ -1,13 +1,13 @@
 const toggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
-// Check saved preference
+// Load saved theme
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark');
   toggleBtn.textContent = "☀️ Light Mode";
 }
 
-// Toggle theme
+// Theme toggle
 toggleBtn.addEventListener('click', () => {
   body.classList.toggle('dark');
   

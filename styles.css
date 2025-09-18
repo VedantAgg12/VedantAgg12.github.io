@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  transition: background 0.3s ease, color 0.3s ease; /* smooth theme change */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Header */
@@ -74,7 +74,6 @@ body {
 .card:nth-child(1) { animation-delay: 0.2s; }
 .card:nth-child(2) { animation-delay: 0.4s; }
 .card:nth-child(3) { animation-delay: 0.6s; }
-.card:nth-child(4) { animation-delay: 0.8s; }
 
 .card:hover {
   transform: translateY(-6px);
@@ -87,13 +86,9 @@ body {
   color: #008cba;
 }
 
-.card.personal {
-  background: #fafafa;
-  border: 2px dashed #888;
-}
-
-.card.personal h2 {
-  color: #d9534f;
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 /* Animations */
