@@ -29,7 +29,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Theme toggle button */
 #theme-toggle {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
@@ -47,24 +46,37 @@ body {
   transform: scale(1.05);
 }
 
+/* Featured Banner */
+.banner-card {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: #ffeaa7;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  animation: fadeUp 0.6s ease forwards;
+}
+
 /* Grid */
 .grid-container {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   padding: 2rem;
+  justify-content: center;
 }
 
 /* Cards */
 .card {
   background: #fff;
-  border-radius: 10px;
-  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
   text-decoration: none;
   color: inherit;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
@@ -79,7 +91,7 @@ body {
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
 .card h2 {
@@ -122,7 +134,7 @@ body.dark .header {
   color: #eee;
 }
 
-body.dark .card {
+body.dark .card, body.dark .banner-card {
   background: #2a2a2a;
   color: #e0e0e0;
 }
