@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon</title>
+<style>
+  /* Reset default margins and paddings */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  /* Animated gradient background */
+  body {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  /* Center container */
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 4em;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #eee;
+    animation: fadeIn 2s ease 1s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Floating animated dots */
+  .dots span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite;
+  }
+
+  .dots span:nth-child(1) { animation-delay: 0s; }
+  .dots span:nth-child(2) { animation-delay: 0.3s; }
+  .dots span:nth-child(3) { animation-delay: 0.6s; }
+
+  @keyframes bounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+  }
+
+  /* Optional countdown timer */
+  .countdown {
+    margin-top: 40px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeIn 2s ease 2s forwards;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>COMING SOON</h1>
+  <p>We are working hard to bring something amazing<span class="dots"><span></span><span></span><span></span></span></p>
+  
+  <!-- Optional Countdown -->
+  <div class="countdown" id="countdown"></div>
+</div>
+
+<script>
+  // Countdown timer (adjust target date)
+  const countdownElement = document.getElementById('countdown');
+  const targetDate = new Date("2025-12-31T00:00:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if(distance < 0) {
+      countdownElement.innerHTML = "We're Live!";
+      clearInterval(countdownInterval);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  const countdownInterval = setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+</body>
+</html>
