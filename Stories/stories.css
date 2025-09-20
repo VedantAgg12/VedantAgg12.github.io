@@ -1,0 +1,99 @@
+/* Body and general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light mode default */
+  color: #111;
+  margin: 0;
+  padding: 2rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  color: #111;
+  padding: 1.25rem;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Tags */
+.tags {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem; /* extra spacing before button */
+}
+
+.tag {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 3px 7px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+
+body.light-mode .tag {
+  background-color: #ddd;
+  color: #111;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #005ea3;
+}
