@@ -15,6 +15,7 @@ fetch('stories.json')
           ${story.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
         </div>
         <button class="btn btn-primary" onclick="window.location.href='${story.page}'">Explore Story →</button>
+
       `;
 
       grid.appendChild(card);

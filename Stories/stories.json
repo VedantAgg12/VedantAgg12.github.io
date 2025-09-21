@@ -2,7 +2,25 @@
   {
     "title": "Operation Stormbreak",
     "teaser": "Special-Force Unit Stealth Spear assaults the Crimson Vow’s canyon fortress to capture leader Idran Vale alive — a brutal mission of fire, steel, and precision.",
-    "tags": ["Stealth Spear", "Spec Ops", "Crimson Vow"],
+    "tags": ["Shadow Talon", "Spec Ops", "Crimson Vow"],
     "page": "stories/Operation_Stormbreak.html"
+  },
+  {
+    "title": "Operation Spearfall",
+    "teaser": "When a corporate research station goes dark over a toxic ring-world, the Aegis Spear’s Special Forces Task Force must extract a high-value prototype amidst orbital mercenary threats.",
+    "tags": ["Shadow Talon", "Spec Ops", "Aegis Spear"],
+    "page": "stories/Operation_Spearfall.html"
+  },
+  {
+    "title": "Operation Quadfall",
+    "teaser": "Four points, one night — the Dire Talon Battalion hits four enemy nodes simultaneously. Each company must complete its mission and vanish before their echoes compromise them all.",
+    "tags": ["Dire Talon", "Spec Ops", "Aegis Spear"],
+    "page": "stories/Operation_Quadfall.html"
+  },
+  {
+    "title": "Operation Shardstorm",
+    "teaser": "A fortified biotech refinery — the “Shard” — must be struck from four axes at once. The battalion must seize the catalytic core before the facility’s automated scuttle purges it.",
+    "tags": ["Dire Talon", "Spec Ops", "Aegis Spear"],
+    "page": "stories/Operation_Shardstorm.html"
   }
 ]
