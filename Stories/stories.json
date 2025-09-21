@@ -1,12 +1,8 @@
 [
   {
-    "title": "Dire Talons: Silent Insertion",
-    "teaser": "A stealth force infiltrates deep into hostile territory to dismantle key enemy assets.",
-    "tags": ["Dire Talons", "Spec Ops", "Covert Ops"]
-  },
-  {
-    "title": "Ironclaw Assault: First Strike",
-    "teaser": "The Ironclaw Brigade launches a coordinated assault on enemy fortifications.",
-    "tags": ["Ironclaw Brigade", "Assault", "Combined Arms"]
+    "title": "Operation Stormbreak",
+    "teaser": "Special-Force Unit Stealth Spear assaults the Crimson Vow’s canyon fortress to capture leader Idran Vale alive — a brutal mission of fire, steel, and precision.",
+    "tags": ["Stealth Spear", "Spec Ops", "Crimson Vow"],
+    "page": "stories/Operation_Stormbreak.html"
   }
 ]
